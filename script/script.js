@@ -44,7 +44,7 @@ closeProjectButton.addEventListener('click',()=>{
 })
 
 button.addEventListener('click',()=>{
-    document.getElementById('button').textContent="No file extension found"
+    document.getElementById('button').textContent="File Downloaded"
 })
 
 blog.addEventListener('click',()=>{
