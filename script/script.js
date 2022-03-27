@@ -7,6 +7,7 @@ let contactButton = document.getElementById('contact')
 let closeInfoButton=document.getElementById('close')
 let closeProjectButton=document.getElementById('close-project')
 let button=document.getElementById('button')
+let blog=document.getElementById('blog')
 
 introButton.addEventListener('click',()=>{
     document.querySelector('.Infocontainer').classList.add('active')
@@ -44,6 +45,10 @@ closeProjectButton.addEventListener('click',()=>{
 
 button.addEventListener('click',()=>{
     document.getElementById('button').textContent="No file extension found"
+})
+
+blog.addEventListener('click',()=>{
+    document.getElementById('blog').textContent="Page Under Construction please refresh"
 })
 
 
