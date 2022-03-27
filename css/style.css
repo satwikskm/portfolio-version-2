@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Odibee+Sans&family=Overpass&family=Roboto&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Inspiration', cursive;
+  font-family: 'Odibee Sans', cursive;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+  background: url(/Tesselation-Transition.jpeg);
+}
+
+a{
+  text-decoration: none;
+}
+
+.main{
+  display: flex;
+ 
+  height: 70vh;
+}
+
+ul, li{
+  text-decoration: none;
+  list-style: none;
+
+}
+
+li{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(38, 129, 233, 0.2);
+}
+
+button:hover{
+  transition: 0.5s ease-in;
+  background: rgb(139, 193, 243);
+}
+
+
+
+.left-sidebar{
+  transform: translate(0px,100px);
+  padding: 20px 20px;
+  background: rgb(235, 235, 235);
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  height: 30vh;
+}
+
+
+.center-content{
+  
+  width: 80%;
+
+}
+
+.right-sidebar{
+  transform: translate(0px,100px);
+  padding: 20px 20px;
+  background: rgb(235, 235, 235);
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  justify-content: space-between;
+  height: 30vh;
+  text-align: center;
+}
+
+.Infocontainer{
+  margin: 30px 30px;
+  background: rgb(230, 252, 255);
+  border-radius: 30px;
+  height: 50vh;
+  display: flex;
+  box-shadow: 10px 10px 5px 12px lightblue;
+  
+}
+
+.active{
+  display: none;
+  
+}
+
+.dev-info{
+  margin: 30px 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+
+.hello{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.name{
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.about{
+  font-size: 20px;
+}
+.skills{
+  background: rgb(228, 250, 249);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  gap: 100px;
+  width: 70%;
+  transform: translate(200px,0);
+  
+}
+
+.active{
+  display: none;
+}
+
+.buttons button{
+  gap: 30px;
+  padding: 20px 20px;
+  background: rgba(38, 129, 233, 0.658);
+  border-radius: 20px;
+  border: none;
+}
+
+.intro{
+  background: white;
+  height: 60vh;
+  border-radius: 20px;
+  padding: 30px 30px;
+  width: 30%;
+  box-shadow: 10px 10px 5px 12px lightblue;
+  transform: translate(500px, -550px);
+  display: none;
+}
+
+.intro button{
+  background: red;
+  padding: 10px 10px;
+  color: aliceblue;
+  font-size: 10px;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  transform: translate(400px,0);
+  
+
+}
+
+.projects{
+  background: white;
+  height: 60vh;
+  border-radius: 20px;
+  padding: 30px 30px;
+  width: 70%;
+  box-shadow: 5px 5px 5px 5px lightblue;
+  transform: translate(180px, -550px);
+  display: none;
+
+}
+
+.projects button{
+  background: red;
+  padding: 10px 10px;
+  color: aliceblue;
+  font-size: 10px;
+  font-weight: 300;
+  border: none;
+  border-radius: 5px;
+  transform: translate(900px,0);
+}
+
