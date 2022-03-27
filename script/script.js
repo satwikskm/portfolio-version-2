@@ -6,6 +6,7 @@ let blogButton = document.getElementById('blog')
 let contactButton = document.getElementById('contact')
 let closeInfoButton=document.getElementById('close')
 let closeProjectButton=document.getElementById('close-project')
+let button=document.getElementById('button')
 
 introButton.addEventListener('click',()=>{
     document.querySelector('.Infocontainer').classList.add('active')
@@ -41,6 +42,9 @@ closeProjectButton.addEventListener('click',()=>{
     document.getElementById('projects').style.display="none"
 })
 
+button.addEventListener('click',()=>{
+    document.getElementById('button').textContent="No file extension found"
+})
 
 
 
