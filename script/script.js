@@ -5,7 +5,7 @@ let resumeButton = document.getElementById('resume')
 let blogButton = document.getElementById('blog')
 let contactButton = document.getElementById('contact')
 let closeInfoButton=document.getElementById('close')
-let closeProjectButton=document.getElementById('project')
+let closeProjectButton=document.getElementById('close-project')
 
 introButton.addEventListener('click',()=>{
     document.querySelector('.Infocontainer').classList.add('active')
@@ -32,4 +32,16 @@ projectButton.addEventListener('click',()=>{
 
     console.log("in")
 })
+
+closeProjectButton.addEventListener('click',()=>{
+    console.log(document.querySelector('.Infocontainer'))
+    document.querySelector('.Infocontainer').classList.remove('active')
+    document.querySelector('.skills').classList.remove('active')
+    document.getElementById('project').style.color="black"
+    document.getElementById('projects').style.display="none"
+})
+
+
+
+
 
