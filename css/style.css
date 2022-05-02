@@ -17,6 +17,7 @@ body{
 a{
   text-decoration: none;
   color: rgba(15, 23, 97, 0.911);
+  
 }
 
 html{
@@ -405,13 +406,62 @@ html{
 .contact-form .contact-form-btn {
   background-color: #e41c6f;
   color: #fff;
-  text-transform: uppercase;
+  
   letter-spacing: 1rem;
   cursor: pointer;
 }
 
 .footer{
+  padding: 30px 30px;
   background: #e41c6f;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a{
+  text-decoration: none;
+  
+}
+
+.social i{
+  color: #333;
+  
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.phone{
+  display: flex;
+  gap:10px;
+}
+.email{
+  display: flex;
+  gap:10px;
+}
+
+.end{
+  text-align: center;
+  background: #fff;
+  color: #333;
+}
+
+#linkdin:hover{
+  color: blue;
+  background-color: #fff;
+}
+
+#github:hover{
+  background: #fff;
 }
 
 
