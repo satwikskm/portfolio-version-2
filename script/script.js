@@ -1,55 +1,45 @@
 'use strict'
-let introButton = document.getElementById('info')
-let projectButton = document.getElementById('project')
-let resumeButton = document.getElementById('resume')
-let blogButton = document.getElementById('blog')
-let contactButton = document.getElementById('contact')
-let closeInfoButton=document.getElementById('close')
-let closeProjectButton=document.getElementById('close-project')
-let button=document.getElementById('button')
-let blog=document.getElementById('blog')
+const navbar = document.querySelector('.container-2')
+const navbarOffsetTop = navbar.offsetTop
+const sections = document.querySelectorAll('section')
+const navbarLinks = document.querySelectorAll('.navbar-link')
+const progress = document.querySelector('.progress-bar-wrapper')
+const progressBarPercents = [97,92,70,50,40,30,98,90,97]
 
-introButton.addEventListener('click',()=>{
-    document.querySelector('.Infocontainer').classList.add('active')
-    document.querySelector('.skills').classList.add('active')
-    document.getElementById('info').style.color="blue"
-        document.getElementById('intro').style.display="block"
+window.addEventListener('scroll',()=>{
+    // console.log(window.pageYOffset,navbar.offsetTop)
+    if(window.pageYOffset >= navbarOffsetTop){
+       
+        navbar.classList.add('sticky')
+    }
+    else{
+        navbar.classList.remove('sticky')
+    }
+    sections.forEach((section,i)=>{
+       
+       
+        if(window.pageYOffset >= section.offsetTop - 10 ){
+            navbarLinks.forEach(navbarLink =>{
+                navbarLink.classList.remove('change')
+            })
+            navbarLinks[i].classList.add('change')
+            
+            
+        }
 
-    console.log("in")
+    })
+    console.log(progress.offsetTop,"l")
+    if(window.pageYOffset+ window.innerHeight >= progress.offsetTop){
+        document.querySelectorAll('.progress-bar-percentage').forEach((e,i)=>{
+            e.style.width = `${progressBarPercents[i]}%`;
+            e.previousElementSibling.firstElementChild.textContent =
+              progressBarPercents[i];
+            
+        })
+
+    }
 })
 
-closeInfoButton.addEventListener('click',()=>{
-    console.log(document.querySelector('.Infocontainer'))
-    document.querySelector('.Infocontainer').classList.remove('active')
-    document.querySelector('.skills').classList.remove('active')
-    document.getElementById('info').style.color="black"
-    document.getElementById('intro').style.display="none"
-})
-
-projectButton.addEventListener('click',()=>{
-    document.querySelector('.Infocontainer').classList.add('active')
-    document.querySelector('.skills').classList.add('active')
-    document.getElementById('project').style.color="blue"
-    document.getElementById('projects').style.display="block"
-
-    console.log("in")
-})
-
-closeProjectButton.addEventListener('click',()=>{
-    console.log(document.querySelector('.Infocontainer'))
-    document.querySelector('.Infocontainer').classList.remove('active')
-    document.querySelector('.skills').classList.remove('active')
-    document.getElementById('project').style.color="black"
-    document.getElementById('projects').style.display="none"
-})
-
-button.addEventListener('click',()=>{
-    document.getElementById('button').textContent="File Downloaded"
-})
-
-blog.addEventListener('click',()=>{
-    document.getElementById('blog').textContent="Page Under Construction please refresh"
-})
 
 
 
