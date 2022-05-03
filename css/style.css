@@ -317,6 +317,14 @@ html{
   
 }
 
+.info{
+  display: none;
+}
+
+.project:hover .info{
+  display: block;
+}
+
 
 .project-text{
   padding: 5px 20px;
@@ -341,6 +349,8 @@ html{
   margin-left: 500px;
  
 }
+
+
 .container-4 .section-heading:hover{
   width: 30%;
   text-align: center;
@@ -349,6 +359,7 @@ html{
   margin-left: 400px;
   transform: skewY(-8deg);
 }
+
 
 
 .project-wrapper{
@@ -365,7 +376,7 @@ html{
 
 .container-5 {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -455,6 +466,43 @@ html{
   color: #333;
 }
 
+.experience{
+  margin-top: 100px;
+  height: 220vh;
+}
+
+.work-experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  
+}
+
+.company-1{
+  margin-top: 50px;
+  width: 60%;
+  padding: 20px 30px;
+  display: flex;
+  gap:50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 1px rgba(49, 24, 24, 0.2),5px 5px 5px rgb(34, 32, 32);
+}
+
+.company-logo{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+  width: 100%;
+}
+
+.infosys-office{
+  width: 100%;
+}
+
+
+
 #linkdin:hover{
   color: blue;
   background-color: #fff;
@@ -464,5 +512,223 @@ html{
   background: #fff;
 }
 
+/* 
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
+/* The actual timeline (the vertical ruler) */
+/* .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+} */
+
+/* Container around content */
+/* .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+} */
+
+
+@media(max-width:410px){
+  .container-1{
+    width: 100%;
+   
+  }
+
+  .container-1 img{
+    width: 50%;
+  }
+  .buttons{
+    flex-direction: column;
+  }
+
+  /* .sticky{
+    position:fixed;
+    top: auto;
+    overflow: hidden;
+    width: 100%; 
+    
+  } */
+
+
+  
+  .container-3{
+    margin-top: 100vh;
+    width: 300px;
+    height: 100vh;
+  }
+  .progress-bar-wrapper{
+    width: 300px;
+  }
+  .progress-bar{
+    width: 300px;
+  }
+
+  .technology{
+    grid-template-columns: 150px;
+    margin-left: 100px;
+  }
+
+  .project-wrapper{
+    margin-top: 30px;
+    grid-template-columns: 300px;
+    margin-left: 50px;
+  }
+  .container-4{
+    margin-top: 900px;
+    height: 800vh;
+  }
+
+  .experience{
+    margin-top: 60vh;
+    height: 200vh;
+  }
+
+  .container-2{
+    overflow: hidden;
+  }
+
+  
+
+  .container-4 .section-heading{
+    margin-left: 30px;
+    width: 80%;
+
+  }
+  .container-5{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .work-experience{
+    margin-top: 500px;
+    margin-left: 30px;
+    height: 80vh;
+  }
+
+  .company-1{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .company-1 .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  }
+
+  .nav-bar{
+    margin-left: 0;
+    margin-right: 0;
+    gap:15px;
+    letter-spacing: 0;
+  }
+
+  .container-2 #cnt{
+    display: none;
+  }
+
+  .navbar-link.change{
+    color: #fff;
+  }
+  .contact-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #eef;
+    font-size: 1.5rem;
+    border: 0.2rem solid #e41c6f;
+    color: #555;
+  }
+  
+  .contact-form textarea {
+    height: 10rem;
+    max-height: 15rem;
+    max-width: 100%;
+  }
+  
+  .contact-form .contact-form-btn {
+    background-color: #e41c6f;
+    color: #fff;
+    
+    letter-spacing: 1rem;
+    cursor: pointer;
+  }
+
+
+
+
+}
 

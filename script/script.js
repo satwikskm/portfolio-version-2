@@ -22,13 +22,14 @@ window.addEventListener('scroll',()=>{
             navbarLinks.forEach(navbarLink =>{
                 navbarLink.classList.remove('change')
             })
+            console.log(navbarLinks[i])
             navbarLinks[i].classList.add('change')
             
             
         }
 
     })
-    console.log(progress.offsetTop,"l")
+    // console.log(progress.offsetTop,"l")
     if(window.pageYOffset+ window.innerHeight >= progress.offsetTop){
         document.querySelectorAll('.progress-bar-percentage').forEach((e,i)=>{
             e.style.width = `${progressBarPercents[i]}%`;
