@@ -637,6 +637,10 @@ html{
     margin-left: 30px;
     margin-right: 30px;
   }
+  .project{
+    align-items: center;
+    justify-content: center;
+  }
   .container-4{
     margin-top: 900px;
     height: 800vh;
@@ -667,7 +671,7 @@ html{
   }
 
   .work-experience{
-    margin-top: 150vh;
+    margin-top: 180vh;
     margin-left: 30px;
     height: 80vh;
   }
