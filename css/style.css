@@ -617,6 +617,7 @@ html{
     margin-top: 100vh;
     width: 300px;
     height: 100vh;
+    margin-left: 20px;
   }
   .progress-bar-wrapper{
     width: 300px;
@@ -633,7 +634,8 @@ html{
   .project-wrapper{
     margin-top: 30px;
     grid-template-columns: 300px;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .container-4{
     margin-top: 900px;
@@ -651,9 +653,12 @@ html{
 
   
 
+  
+
   .container-4 .section-heading{
     margin-left: 30px;
     width: 80%;
+    
 
   }
   .container-5{
@@ -662,7 +667,7 @@ html{
   }
 
   .work-experience{
-    margin-top: 500px;
+    margin-top: 150vh;
     margin-left: 30px;
     height: 80vh;
   }
