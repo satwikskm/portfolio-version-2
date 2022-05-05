@@ -590,7 +590,7 @@ html{
 } */
 
 
-@media(max-width:400px){
+@media(max-width:393px){
   .container-1{
     width: 100%;
    
@@ -677,8 +677,10 @@ html{
   }
 
   .company-1{
-    width: 100%;
+    width: 80%;
     flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .company-1 .buttons{
