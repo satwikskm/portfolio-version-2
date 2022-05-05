@@ -590,7 +590,7 @@ html{
 } */
 
 
-@media(max-width:410px){
+@media(max-width:400px){
   .container-1{
     width: 100%;
    
@@ -736,6 +736,7 @@ html{
     cursor: pointer;
   }
   .container-5{
+    margin-top: 50vh;
     height: 100vh;
   }
 
