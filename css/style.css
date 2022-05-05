@@ -673,11 +673,11 @@ html{
   .work-experience{
     margin-top: 200vh;
    
-    height: 80vh;
+    height: 120vh;
   }
 
   .company-1{
-    width: 80%;
+    width: 100%;
     flex-direction: column;
   }
 
