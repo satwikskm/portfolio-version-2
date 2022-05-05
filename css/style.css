@@ -673,7 +673,7 @@ html{
   .work-experience{
     margin-top: 200vh;
    
-    height: 10vh;
+    height: 100vh;
   }
 
   .company-1{
@@ -734,6 +734,9 @@ html{
     
     letter-spacing: 1rem;
     cursor: pointer;
+  }
+  .container-5{
+    margin-top: 100vh;
   }
 
   
