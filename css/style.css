@@ -16,7 +16,7 @@ body{
 
 a{
   text-decoration: none;
-  color: rgba(15, 23, 97, 0.911);
+  color: rgba(0, 0, 0, 0.911);
   
 }
 
@@ -259,17 +259,39 @@ html{
 }
 
 .container-4{
-  height: 320vh;
+  height: 10vh;
   transition: 0.5s ease-in;
 }
+
+.btn-primary-right {
+  padding: 30px 30px;
+  font-size: 40px;
+  z-index: -1;
+  transform: translate(1200px,100px);
+  
+}
+
+.btn-primary-left {
+  padding: 30px 30px;
+  font-size: 40px;
+  z-index: -1;
+  transform: translate(100px,100px);
+  
+}
+
+
+/* .btn-primary-left{
+  transform: translate(0px -700px);
+} */
 /* .container-5{
   height: 100vh;
 } */
 
-.project{
+.project.active{
   
   padding: 10px 20px;
   display: flex;
+  transform: translate(300px);
   flex-direction: column;
   border-radius: 10px;
   background: whitesmoke;
@@ -287,31 +309,42 @@ html{
   
 }
 
-.project:hover .project-text{
+.project.active:hover .project-text{
   transform: translateY(120px);
 }
-.project:hover .project-link{
+.project.active:hover .project-link{
   transform: translateY(-100px);
 }
 
-.project:hover .project-image{
+.project.active:hover .links{
+  transform: translateY(-100px);
+}
+
+.links{
+  margin-bottom: 10px;
+  transition: 0.5s ease-in;
+}
+
+
+
+.project.active:hover .project-image{
   opacity: 0.2;
 }
 
-.project:hover .html{
+.project.active:hover .html{
   color: rgb(255, 94, 0);
 }
 
-.project:hover .css{
+.project.active:hover .css{
   background: rgb(82, 177, 240);
   color: #fff;
 }
 
-.project:hover .js{
+.project.active:hover .js{
   color: orange;
 }
 
-.project:hover .react{
+.project.active:hover .react{
   color: rgb(79, 187, 214);
   background: rgb(34, 34, 34);
   
@@ -321,8 +354,12 @@ html{
   display: none;
 }
 
-.project:hover .info{
+.project .active:hover .info{
   display: block;
+}
+
+.project{
+  display: none;
 }
 
 
@@ -360,14 +397,157 @@ html{
   transform: skewY(-8deg);
 }
 
+.wrapper-class{
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 100%;
+display: grid;
+grid-template-columns: 400px 400px 400px;
+grid-column-gap:50px;
+
+}
+
+
+
+.new-projects{
+  margin: 20px 20px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  
+}
+
+.new-projects:nth-child(2) img{
+  width: 70%;
+}
+
+.new-projects:nth-child(4) i{
+  transform: translate(0px,80px);
+}
+
+.desc-link-wr{
+  display: flex;
+}
+
+.recent-projects .section-heading{
+  width: 30%;
+  text-align: center;
+  transform: translateX(500px);
+}
+
+.new-link{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  transform: translate(320px,-120px);
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+
+.new-projects::before{
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 0px;
+  background:black;
+  transform: translate(300px,20px);
+  transition: height 0.5s;
+}
+
+.new-projects::after{
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  background: black;
+  transform: translate(30px,100px);
+  transition: width 0.5s;
+}
+
+.new-project-name{
+  position: absolute;
+  top:30px;
+  left:30px;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color:black;
+  width: 0;
+  overflow: hidden;
+ 
+  
+  
+}
+
+.new-projects:hover::before{
+  height: 250px;
+  
+
+}
+
+.new-projects:hover::after{
+  width: 350px;
+
+}
+
+.new-projects:hover .new-project-name{
+  width: 100%;
+  transition: width 1.5s 0.5s;
+}
+
+
+.new-projects:hover .new-project-desc{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 4s;
+}
+
+.new-projects:hover .new-link{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 4s;
+}
+
+.new-projects:hover .new-project-img{
+      
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(1.1);
+
+}
+
+.new-project-desc{
+  position: absolute;
+   bottom: 20px;
+   left:10px;
+   margin: 20px 20px;
+   width: 70%;
+   letter-spacing: 3px;
+   text-shadow: 1px 1px 1px #fff;
+   overflow: hidden;
+   opacity: 0;
+   visibility: hidden;
+}
+
+
+.new-projects img{
+  width: 100%;
+}
+
 
 
 .project-wrapper{
   padding: 10px 30px;
   margin: 10px 10px;
   display: flex;
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  /* display: grid;
+  grid-template-columns: 2fr 2fr 2fr; */
   /* flex-wrap: wrap;
   align-items: center;
   justify-content: center; */
@@ -742,6 +922,10 @@ html{
   .container-5{
     margin-top: 100vh;
     height: 100vh;
+  }
+
+  .recent-projects{
+    display: none;
   }
 
   
