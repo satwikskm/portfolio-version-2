@@ -27,7 +27,11 @@ html{
 .container-1{
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(5, 43, 100, 0.2),rgba(140, 91, 231, 0.3)) ,url(/Asserts/images/bg.jpg) center no-repeat;
+  background: #010028;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -41,11 +45,13 @@ html{
 .container-1 img{
   width: 15%;
   border-radius: 50%;
+  border: 5px solid #4FFB;
+  box-shadow: 10px 10px 1px #43f9a7;
 }
 
 .section-heading{
-  color: #fff;
-  background: #e41c6f;
+  color: #010028;
+  background: #4FFFB0;
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 5px 10px 1px rgba(5, 43, 100, 0.2),10px 15px 10px rgba(214, 202, 236, 0.3);
@@ -56,16 +62,16 @@ html{
 }
 
 .container-1-btn{
-  background: #e41c6f;
-  color: aliceblue;
+  background: #4FFFB0;
+  color: #010028;
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: 1px 10px 1px #e41c6f,1px 20px 1px rgba(235, 228, 228, 0.555);
+  box-shadow: 1px 10px 1px #43f9a7,1px 20px 1px rgba(235, 228, 228, 0.555);
 }
 
 .container-2{
   padding: 10px 20px;
-  background: #e41c6f;
+  background: #4FFFB0;
   width: 100%;
   position: absolute;
   z-index: 300;
@@ -373,7 +379,7 @@ html{
 
 .project-link{
   padding: 10px 10px;
-  border: 2px solid #e41c6f;
+  border: 2px solid #010028;
   background: #fff;
   transition: 0.5s ease-in;
 }
@@ -584,7 +590,7 @@ grid-column-gap:50px;
   margin: 0.5rem 0;
   background-color: #eef;
   font-size: 1.5rem;
-  border: 0.2rem solid #e41c6f;
+  border: 0.2rem solid #010028;
   color: #555;
 }
 
@@ -595,8 +601,8 @@ grid-column-gap:50px;
 }
 
 .contact-form .contact-form-btn {
-  background-color: #e41c6f;
-  color: #fff;
+  background-color: #4FFFB0;
+  color: #010028;
   
   letter-spacing: 1rem;
   cursor: pointer;
@@ -604,7 +610,7 @@ grid-column-gap:50px;
 
 .footer{
   padding: 30px 30px;
-  background: #e41c6f;
+  background: #4FFFB0;
   text-transform: lowercase;
   display: flex;
   justify-content: space-between;
